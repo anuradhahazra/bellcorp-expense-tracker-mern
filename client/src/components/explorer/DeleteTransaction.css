@@ -1,0 +1,42 @@
+.delete-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  max-width: 420px;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+}
+
+.delete-card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+}
+
+.delete-card p {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+}
+
+.delete-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem;
+  background: var(--bg-input);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.delete-preview strong {
+  color: var(--text);
+}
+
+.delete-error {
+  color: var(--danger) !important;
+}
+
+.delete-card .form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
