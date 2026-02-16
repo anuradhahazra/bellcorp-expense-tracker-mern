@@ -1,6 +1,6 @@
-# Bellcorp Personal Expense Tracker (MERN)
+# Bellcorp Expense Tracker (MERN)
 
-A full-stack personal expense tracker built with the MERN stack: MongoDB, Express, React, and Node.js. Features JWT authentication, dashboard with totals and category summary, and a transaction explorer with search, filters, and pagination.
+A full-stack expense tracker built with the MERN stack: MongoDB, Express, React, and Node.js. Features JWT authentication, a dashboard with totals and category summary, and a transaction explorer with search, filters, and pagination.
 
 ## Tech Stack
 
@@ -126,8 +126,28 @@ All transaction routes require `Authorization: Bearer <token>`.
 
 ## Deployment
 
-- **Backend:** Set `PORT` and `MONGODB_URI` (e.g. MongoDB Atlas). Set a strong `JWT_SECRET`. Use `npm start` (or `node server.js`).
-- **Frontend:** Set `VITE_API_URL` to your deployed API base URL (e.g. `https://api.example.com/api`). Run `npm run build` and serve the `client/dist` folder (e.g. Nginx, Vercel, Netlify).
+### Backend (Render)
+
+- Hosted on Render
+- Set environment variables:
+  
+  PORT=5000  
+  MONGODB_URI=your_mongodb_atlas_url  
+  JWT_SECRET=your_secret_key  
+
+- Live API:
+  https://bellcorp-expense-tracker-mern.onrender.com/api
+
+
+### Frontend (Render)
+
+- Hosted on Render
+- Environment variable:
+
+  VITE_API_URL=https://bellcorp-expense-tracker-mern.onrender.com/api
+
+- Live Site:
+  https://bellcorp-expense-tracker-mern-frontend.onrender.com/
 
 ## License
 
